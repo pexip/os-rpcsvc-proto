@@ -1,0 +1,42 @@
+rpcsvc-proto (1.4.3-1) unstable; urgency=medium
+
+  [ Aurelien Jarno ]
+  * New upstream version.
+  * Update debian/copyright.
+  * Bump Standards-Version to 4.6.1 (no changes).
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS: Run the installed rpcgen during cross builds.  Closes:
+    #1025148)
+
+ -- Aurelien Jarno <aurel32@debian.org>  Fri, 02 Dec 2022 22:30:20 +0100
+
+rpcsvc-proto (1.4.2-4) unstable; urgency=medium
+
+  * Bump the breaks + replace version to 2.31-14. Thanks to Simon McVittie for
+    the hint.  Closes: #983910.
+  * Bump Standards-Version to 4.6.0 (no changes).
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 18 Aug 2021 22:04:55 +0200
+
+rpcsvc-proto (1.4.2-3) unstable; urgency=medium
+
+  * Also add a breaks + replace on libc-dev-bin (<< 2.31-13).
+    Closes: #983910.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Wed, 18 Aug 2021 10:29:36 +0200
+
+rpcsvc-proto (1.4.2-2) unstable; urgency=medium
+
+  * Replace the conflicts with libc6-dev by breaks + replaces on libc6-dev
+    (<< 2.31-13).  Closes: #983910.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Mon, 16 Aug 2021 22:50:21 +0200
+
+rpcsvc-proto (1.4.2-1) experimental; urgency=low
+
+  * Initial Release (closes: bug#971990).
+  * rpcsvc-proto is not installable due to the conflicts with libc6, this is
+    done on purpose as it requires a synchronized upload with glibc.
+
+ -- Aurelien Jarno <aurel32@debian.org>  Sun, 11 Oct 2020 13:43:53 +0200

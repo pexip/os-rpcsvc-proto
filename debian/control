@@ -1,0 +1,35 @@
+Source: rpcsvc-proto
+Section: devel
+Priority: optional
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Uploaders: Aurelien Jarno <aurel32@debian.org>, Josue Ortega <josue@debian.org>
+Build-Depends: debhelper-compat (= 13), rpcsvc-proto <cross>
+Rules-Requires-Root: no
+Standards-Version: 4.6.1
+Vcs-Browser: https://salsa.debian.org/glibc-team/rpcsvc-proto
+Vcs-Git: https://salsa.debian.org/glibc-team/rpcsvc-proto.git
+Homepage: https://github.com/thkukuk/rpcsvc-proto
+
+Package: rpcsvc-proto
+Section: libs
+Architecture: any
+Multi-Arch: foreign
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Replaces: libc6-dev (<< 2.31-14) [!alpha !ia64 !kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+          libc6.1-dev (<< 2.31-14) [alpha ia64],
+          libc0.1-dev (<< 2.31-14) [kfreebsd-amd64 kfreebsd-i386],
+          libc0.3-dev (<< 2.31-14) [hurd-i386],
+          libc-dev-bin (<< 2.31-14)
+Breaks: libc6-dev (<< 2.31-14) [!alpha !ia64 !kfreebsd-amd64 !kfreebsd-i386 !hurd-i386],
+        libc6.1-dev (<< 2.31-14) [alpha ia64],
+        libc0.1-dev (<< 2.31-14) [kfreebsd-amd64 kfreebsd-i386],
+        libc0.3-dev (<< 2.31-14) [hurd-i386],
+        libc-dev-bin (<< 2.31-14)
+Description: RPC protocol compiler and definitions
+ rpcgen is a tool that generates C code to implement an RPC protocol. The input
+ to rpcgen is a language similar to C known as RPC Language (Remote Procedure
+ Call Language).
+ .
+ This package also includes several rpcsvc header files and RPC protocol
+ definitions from SunRPC sources that were previously shipped by glibc.

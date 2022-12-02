@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/architecture.mk
+
+%:
+	dh $@
+
+ifneq ($(DEB_BUILD_ARCH),$(DEB_HOST_ARCH))
+execute_before_dh_auto_build:
+	set -e; for f in rpcsvc/*.x; do \
+		rpcgen -h -o $${f%.x}.h $$f; \
+	done
+endif

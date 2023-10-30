@@ -1,3 +1,9 @@
+rpcsvc-proto (1.4.3-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Mon, 30 Oct 2023 12:07:11 +0000
+
 rpcsvc-proto (1.4.3-1) unstable; urgency=medium
 
   [ Aurelien Jarno ]

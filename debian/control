@@ -1,14 +1,16 @@
 Source: rpcsvc-proto
 Section: devel
 Priority: optional
-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
-Uploaders: Aurelien Jarno <aurel32@debian.org>, Josue Ortega <josue@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+XSBC-Pexip-Original-Uploaders: Aurelien Jarno <aurel32@debian.org>, Josue Ortega <josue@debian.org>
 Build-Depends: debhelper-compat (= 13), rpcsvc-proto <cross>
 Rules-Requires-Root: no
 Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/glibc-team/rpcsvc-proto
 Vcs-Git: https://salsa.debian.org/glibc-team/rpcsvc-proto.git
 Homepage: https://github.com/thkukuk/rpcsvc-proto
+XS-Pexip-Upstream: http://deb.debian.org/debian/ bookworm
 
 Package: rpcsvc-proto
 Section: libs

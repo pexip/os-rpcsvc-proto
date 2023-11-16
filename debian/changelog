@@ -1,3 +1,9 @@
+rpcsvc-proto (1.4.3-1pexip3) pexip-bookworm; urgency=medium
+
+  * Initial bookworm build
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 16 Nov 2023 10:28:24 +0000
+
 rpcsvc-proto (1.4.3-1pexip2) pexip; urgency=medium
 
   * No-change rebuild against glibc 2.36
